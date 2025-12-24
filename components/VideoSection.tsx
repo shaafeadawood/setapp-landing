@@ -13,10 +13,8 @@ const VideoSection: React.FC = () => {
         </div>
 
         <div className="relative rounded-3xl overflow-hidden min-h-[500px] bg-[#6B4C6A] group cursor-pointer">
-          {/* Background Image / Gradient */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#6B4C6A] via-[#4A3B5C] to-[#2D2B4A] opacity-90"></div>
           
-          {/* Use a placeholder image that mimics the "Musician" vibe */}
           <div 
             className="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-60 transition-transform duration-[20s] group-hover:scale-110"
             style={{ backgroundImage: `url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=2070&auto=format&fit=crop')` }}
@@ -39,7 +37,6 @@ const VideoSection: React.FC = () => {
              </div>
           </div>
 
-          {/* Navigation Arrows (Mock) */}
           <div className="absolute top-1/2 right-8 -translate-y-1/2 hidden md:flex flex-col gap-4 z-30">
               <button className="w-10 h-10 rounded-full border border-primary-white/20 flex items-center justify-center text-primary-white hover:bg-primary-white/10 transition-colors active:scale-95">
                   <svg className="w-5 h-5 rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
@@ -49,7 +46,6 @@ const VideoSection: React.FC = () => {
               </button>
           </div>
           
-          {/* Pagination Dots */}
           <div className="absolute bottom-8 left-0 right-0 flex justify-center gap-2">
              <div className="w-2 h-2 rounded-full bg-primary-white"></div>
              <div className="w-2 h-2 rounded-full bg-primary-white/30 hover:bg-primary-white/50 transition-colors cursor-pointer"></div>

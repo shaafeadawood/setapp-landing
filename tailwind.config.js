@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -33,7 +32,6 @@ export default {
         sans: ['Avenir Next', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
       },
       fontSize: {
-        // Custom typography tokens
         'display-hero': ['64px', { lineHeight: '106%', letterSpacing: '0.015em', fontWeight: '700' }],
         'display-section': ['36px', { lineHeight: '144%', letterSpacing: '0.028em', fontWeight: '600' }],
         'display-card': ['26px', { lineHeight: '154%', letterSpacing: '0', fontWeight: '600' }],

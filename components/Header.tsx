@@ -7,7 +7,6 @@ const Header: React.FC = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#1a1a1a] border-b border-white/10 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 h-[60px] flex items-center justify-between gap-8">
-        {/* Logo Section */}
         <div className="flex items-center gap-2 shrink-0 cursor-pointer hover:opacity-80 transition-opacity">
           <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
             <svg className="w-6 h-6" viewBox="0 0 24 24" fill="#1a1a1a">
@@ -17,9 +16,6 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        {/* Search Bar removed - not in screenshot */}
-
-        {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-8 flex-1 justify-center">
           <a href="#" className="text-sm text-white/70 hover:text-white transition-colors text-center">
             How it works
@@ -41,12 +37,9 @@ const Header: React.FC = () => {
           </a>
         </nav>
 
-        {/* Auth Buttons */}
         <div className="hidden sm:flex items-center gap-6">
-          {/* Separator */}
           <span className="text-white/30 text-lg">|</span>
           
-          {/* US Flag Icon */}
           <div className="w-8 h-6 rounded-sm overflow-hidden">
             <svg viewBox="0 0 24 16" fill="none" className="w-full h-full">
               <rect width="24" height="16" fill="#B22234"/>
@@ -87,18 +80,15 @@ const Header: React.FC = () => {
             </svg>
           </div>
           
-          {/* Sign In Link */}
           <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
             Sign In
           </a>
           
-          {/* Try Free Button */}
           <a href="#" className="text-sm font-semibold text-white bg-transparent hover:bg-white/10 border border-white/30 rounded-lg px-5 py-2 transition-all active:scale-95">
             Try free
           </a>
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="sm:hidden flex items-center">
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -110,7 +100,6 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
         <div className="sm:hidden bg-primary-white border-t border-border-subtle absolute w-full px-4 py-4 shadow-xl animate-slide-up">
            <div className="flex flex-col space-y-4">

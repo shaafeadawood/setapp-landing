@@ -32,15 +32,12 @@ const Testimonials: React.FC = () => {
   return (
     <section className="bg-[#1a1a1a] py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Section Title */}
         <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">Your Setapp journey.</h2>
             <p className="text-gray-400 text-lg">Turn to your Mac, happy-search and get instant app recommendations.</p>
         </div>
 
-        {/* Main Testimonial Card with Image */}
         <div className="relative rounded-3xl overflow-hidden bg-[#8B7BA8] min-h-[500px] md:min-h-[600px]">
-          {/* Navigation Arrows */}
           <div className="absolute top-6 right-6 flex gap-3 z-20">
             <button className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm flex items-center justify-center transition-all">
               <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -55,14 +52,12 @@ const Testimonials: React.FC = () => {
           </div>
 
           <div className="flex flex-col md:flex-row items-center h-full">
-            {/* Left side - Text content */}
             <div className="w-full md:w-1/2 p-8 md:p-12 lg:p-16 z-10">
               <blockquote className="text-2xl md:text-3xl lg:text-4xl font-medium text-white leading-relaxed mb-8">
                 Musicians like Jason use Setapp to push the limits of their creativity, dancing through task for more time to play.
               </blockquote>
               <p className="text-white/80 text-lg mb-12">Jason Staczek</p>
               
-              {/* Play button */}
               <button className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white hover:bg-gray-100 flex items-center justify-center shadow-xl transition-all hover:scale-110">
                 <svg className="w-8 h-8 md:w-10 md:h-10 text-gray-800 ml-1" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M8 5v14l11-7z"/>
@@ -70,7 +65,6 @@ const Testimonials: React.FC = () => {
               </button>
             </div>
 
-            {/* Right side - Person image with matching background */}
             <div className="w-full md:w-1/2 h-full min-h-[400px] md:min-h-[600px] relative bg-[#8B7BA8]">
               <img 
                 src="/images/img8.png" 
@@ -81,7 +75,6 @@ const Testimonials: React.FC = () => {
           </div>
         </div>
         
-        {/* Pagination Dots */}
         <div className="flex justify-center gap-3 mt-12">
             <button className="w-2.5 h-2.5 rounded-full bg-white"></button>
             <button className="w-2.5 h-2.5 rounded-full bg-gray-600 hover:bg-gray-500 transition-colors"></button>

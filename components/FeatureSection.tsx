@@ -14,29 +14,23 @@ const FeatureSection: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Card 1 - Keep your Mac clean - Pink gradient with screenshot */}
             <div className="col-span-1 md:col-span-2 bg-gradient-to-br from-pink-300 to-pink-400 rounded-3xl overflow-hidden min-h-[500px] md:min-h-[600px] relative group">
                 <div className="relative z-10 h-full flex flex-col p-8 md:p-12 lg:p-16 pt-12 md:pt-16 lg:pt-20">
-                    {/* Top section - Icon and Text side by side with more spacing */}
-                    <div className="flex items-start gap-6 mb-12 md:mb-16 lg:mb-20">
-                        {/* Icon on the left */}
-                        <div className="flex-shrink-0">
-                             <img 
-                               src="/images/img2.png" 
-                               alt="CleanMyMac app icon" 
-                               className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-[20px] shadow-lg"
-                             />
-                        </div>
-                        {/* Text on the right */}
-                        <div className="flex-1">
-                            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 leading-tight">Keep your Mac clean</h3>
-                            <p className="text-gray-800 text-base md:text-lg lg:text-xl leading-relaxed">Remove junk, scan for malware, wipe email attachments</p>
-                        </div>
-                    </div>
-                    
-                    {/* Bottom section - Large screenshot */}
                     <div className="flex-1 flex items-end justify-center pb-4 md:pb-6">
                          <div className="w-full max-w-4xl relative">
+                              <div className="flex items-start gap-6 mb-8">
+                                  <div className="flex-shrink-0">
+                                       <img 
+                                         src="/images/img2.png" 
+                                         alt="CleanMyMac app icon" 
+                                         className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-[20px] shadow-lg"
+                                       />
+                                  </div>
+                                  <div className="flex-1">
+                                      <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 leading-tight">Keep your Mac clean</h3>
+                                      <p className="text-gray-800 text-base md:text-lg lg:text-xl leading-relaxed">Remove junk, scan for malware, wipe email attachments</p>
+                                  </div>
+                              </div>
                               <img 
                                 src="/images/img1.png" 
                                 alt="CleanMyMac interface showing System Junk cleaner" 
@@ -47,9 +41,7 @@ const FeatureSection: React.FC = () => {
                 </div>
             </div>
 
-            {/* Card 2 - Write code - Cream/beige card with code editor */}
             <div className="bg-[#FFF8F0] rounded-3xl p-8 md:p-10 min-h-[450px] md:min-h-[500px] flex flex-col relative overflow-hidden group">
-                 {/* Code editor screenshot at top */}
                  <div className="mb-6 relative flex-1">
                       <div className="w-full relative rounded-xl overflow-hidden shadow-2xl transform group-hover:-translate-y-2 transition-transform duration-500">
                            <img 
@@ -60,7 +52,6 @@ const FeatureSection: React.FC = () => {
                       </div>
                  </div>
                  
-                 {/* Icon, title and description at bottom */}
                  <div className="mt-auto">
                     <div className="mb-4">
                          <img 
@@ -74,10 +65,8 @@ const FeatureSection: React.FC = () => {
                  </div>
             </div>
 
-            {/* Card 3 - Join meetings - Dark blue card with meeting interface */}
             <div className="bg-gradient-to-br from-[#3B4F6B] to-[#2C3E50] rounded-3xl p-8 md:p-10 min-h-[450px] md:min-h-[500px] flex flex-col relative overflow-hidden group">
                  <div className="mb-6">
-                    {/* Icon image from public folder */}
                     <div className="mb-6">
                          <img 
                            src="/images/img6.png" 
