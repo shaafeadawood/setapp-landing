@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
   return (
     <div className="relative bg-[#2d2d2f] overflow-hidden min-h-screen flex flex-col items-center justify-center pt-[60px]">
       
-      <div className="absolute inset-0 w-full h-full pointer-events-none">
+      <div className="absolute inset-0 w-full h-full pointer-events-none hidden md:block">
         
         <div className="absolute top-[140px] left-[70px] w-[160px] h-[120px] bg-[#FFB88C] rounded-[24px] rounded-tr-none -rotate-[18deg] shadow-2xl z-10 flex items-center justify-center p-4">
           <span className="text-[#7B3F00] font-black text-[17px] leading-[1.1] text-center uppercase tracking-tight">WORK<br/>WITH<br/>PICS</span>

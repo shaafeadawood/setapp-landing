@@ -14,11 +14,11 @@ const PricingBanner: React.FC = () => {
                 </div>
            </div>
 
-           <div className="relative z-10 max-w-xl">
-               <h2 className="text-4xl md:text-5xl font-bold text-black mb-6 tracking-tight leading-tight">
-                   <span className="whitespace-nowrap">Superpowers starting $9.99/month.</span>
-                   <br/>
-                   Free for 7 days.
+             <div className="relative z-10 max-w-xl">
+               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-6 tracking-tight leading-tight">
+                 <span className="whitespace-nowrap">Superpowers starting $9.99/month.</span>
+                 <br/>
+                 <span className="text-black">Free for 7 days.</span>
                </h2>
                <div className="flex flex-col sm:flex-row gap-4 mt-8">
                    <button className="bg-black hover:bg-gray-900 text-white px-8 py-3.5 rounded-xl font-semibold transition-colors shadow-lg active:scale-95">

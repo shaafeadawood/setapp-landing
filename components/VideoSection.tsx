@@ -14,14 +14,12 @@ const VideoSection: React.FC = () => {
 
         <div className="relative rounded-3xl overflow-hidden min-h-[500px] bg-[#6B4C6A] group cursor-pointer">
           <div className="absolute inset-0 bg-gradient-to-r from-[#6B4C6A] via-[#4A3B5C] to-[#2D2B4A] opacity-90"></div>
-          
           <div 
-            className="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-60 transition-transform duration-[20s] group-hover:scale-110"
-            style={{ backgroundImage: `url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=2070&auto=format&fit=crop')` }}
+            className="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-60 transition-transform duration-[20s] group-hover:scale-110 bg-[url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=2070&auto=format&fit=crop')]"
           ></div>
           
           <div className="absolute inset-0 flex flex-col justify-end md:justify-center p-8 md:p-16 z-20">
-             <div className="md:w-1/2 space-y-6">
+             <div className="md:w-1/2 w-full space-y-6">
                 <p className="text-primary-white text-2xl md:text-4xl font-light leading-tight">
                   "Musicians like Jason use Setapp to push the limits of their creativity, dancing through tasks for more time to play."
                 </p>

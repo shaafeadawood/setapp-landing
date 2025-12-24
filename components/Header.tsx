@@ -101,18 +101,18 @@ const Header: React.FC = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="sm:hidden bg-primary-white border-t border-border-subtle absolute w-full px-4 py-4 shadow-xl animate-slide-up">
+        <div className="sm:hidden fixed top-[60px] left-0 right-0 bg-primary-white border-t border-border-subtle w-full px-4 py-4 z-50 shadow-xl animate-slide-up">
            <div className="flex flex-col space-y-4">
             <input 
               type="text" 
               placeholder="Search..." 
               className="block w-full px-3 py-2 rounded-lg bg-surface-accent text-primary-dark border-none focus:outline-none focus:ring-2 focus:ring-brand-accent"
             />
-            <a href="#" className="text-primary-dark text-label-nav font-medium block py-1 hover:opacity-70 transition-opacity">Marketplace</a>
-            <a href="#" className="text-primary-dark text-label-nav font-medium block py-1 hover:opacity-70 transition-opacity">Membership</a>
+              <a href="#" className="text-primary-dark text-label-nav font-medium block py-2 hover:opacity-70 transition-opacity">Marketplace</a>
+              <a href="#" className="text-primary-dark text-label-nav font-medium block py-2 hover:opacity-70 transition-opacity">Membership</a>
             <div className="h-px bg-border-subtle my-2"></div>
-            <a href="#" className="text-primary-dark text-label-nav font-medium block py-1 hover:opacity-70 transition-opacity">Sign in</a>
-            <a href="#" className="bg-primary-dark text-primary-white font-bold text-center block py-2 rounded-lg hover:bg-primary-dark/90 active:scale-95 transition-all">Try free</a>
+              <a href="#" className="text-primary-dark text-label-nav font-medium block py-2 hover:opacity-70 transition-opacity">Sign in</a>
+              <a href="#" className="bg-primary-dark text-primary-white font-bold text-center block py-3 rounded-lg hover:bg-primary-dark/90 active:scale-95 transition-all">Try free</a>
            </div>
         </div>
       )}
