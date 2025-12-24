@@ -2,9 +2,9 @@ import React from 'react';
 
 const PricingBanner: React.FC = () => {
   return (
-    <section className="bg-brand-dark py-24 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+    <section className="bg-[#1a1a1a] py-24 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-surface-accent rounded-3xl p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between">
+        <div className="bg-[#F5F5F7] rounded-3xl p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between">
            {/* Decorative Background Icon */}
            <div className="absolute top-1/2 left-10 transform -translate-y-1/2 opacity-5 pointer-events-none">
                 <div className="w-96 h-96 grid grid-cols-2 gap-2 rotate-45">
@@ -16,16 +16,16 @@ const PricingBanner: React.FC = () => {
            </div>
 
            <div className="relative z-10 max-w-xl">
-               <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-6 tracking-tight">
+               <h2 className="text-5xl md:text-6xl font-bold text-black mb-6 tracking-tight leading-tight">
                    Superpowers starting $9.99/month.
                    <br/>
-                   <span className="text-primary-dark">Free for 7 days.</span>
+                   <span className="text-black">Free for 7 days.</span>
                </h2>
                <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                   <button className="bg-primary-dark hover:bg-black text-primary-white px-8 py-3 rounded-xl font-bold transition-colors shadow-lg active:scale-95">
+                   <button className="bg-black hover:bg-gray-900 text-white px-8 py-3.5 rounded-xl font-semibold transition-colors shadow-lg active:scale-95">
                        Get started now
                    </button>
-                   <button className="bg-transparent border border-border-subtle hover:border-gray-400 hover:bg-gray-200 text-primary-dark px-8 py-3 rounded-xl font-medium transition-colors active:scale-95">
+                   <button className="bg-transparent border border-gray-300 hover:border-gray-400 hover:bg-gray-100 text-black px-8 py-3.5 rounded-xl font-medium transition-colors active:scale-95">
                        More about Setapp
                    </button>
                </div>

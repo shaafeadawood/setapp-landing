@@ -2,13 +2,13 @@ import React from 'react';
 
 const FeatureSection: React.FC = () => {
   return (
-    <section className="bg-brand-dark py-24 px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#1a1a1a] py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-8">
-          <h2 className="text-display-section font-bold text-primary-white max-w-lg">
+          <h2 className="text-5xl md:text-6xl font-bold text-white max-w-lg leading-tight">
             What you get on Setapp.
           </h2>
-          <p className="text-gray-400 max-w-md text-body-large leading-relaxed">
+          <p className="text-gray-400 max-w-md text-lg leading-relaxed">
             With a single monthly subscription at $9.99, you get 240+ apps for your Mac.
           </p>
         </div>
@@ -22,8 +22,8 @@ const FeatureSection: React.FC = () => {
                         <div className="inline-block p-3 bg-primary-white/20 rounded-2xl mb-6 backdrop-blur-sm">
                              <svg className="w-8 h-8 text-primary-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                         </div>
-                        <h3 className="text-display-card font-bold text-primary-dark mb-4">Keep your Mac clean</h3>
-                        <p className="text-primary-dark/80 text-body-large">Remove junk, scan for malware, wipe email attachments</p>
+                        <h3 className="text-3xl font-bold text-black mb-4">Keep your Mac clean</h3>
+                        <p className="text-black/70 text-lg">Remove junk, scan for malware, wipe email attachments</p>
                     </div>
                     <div className="flex-1 h-full w-full min-h-[300px] flex items-center justify-center p-8">
                          {/* Abstract UI Representation */}
@@ -47,11 +47,11 @@ const FeatureSection: React.FC = () => {
             {/* Card 2 */}
             <div className="bg-[#FFF8F0] rounded-3xl p-8 min-h-[450px] flex flex-col relative overflow-hidden group">
                  <div className="mb-auto">
-                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                         <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                    <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                         <svg className="w-7 h-7 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
                     </div>
-                    <h3 className="text-display-card font-bold text-primary-dark mb-2">Write code</h3>
-                    <p className="text-gray-600 text-body-base">Create applications in more than 25 languages</p>
+                    <h3 className="text-3xl font-bold text-black mb-2">Write code</h3>
+                    <p className="text-gray-600 text-base">Create applications in more than 25 languages</p>
                  </div>
                  <div className="mt-8 relative h-64 w-full bg-[#1e1e1e] rounded-xl shadow-2xl transform group-hover:translate-y-2 transition-transform duration-500 p-4 font-mono text-xs overflow-hidden">
                       <div className="text-gray-500 mb-2">// building the future</div>
@@ -72,11 +72,11 @@ const FeatureSection: React.FC = () => {
             {/* Card 3 */}
             <div className="bg-[#1C1C1E] rounded-3xl p-8 min-h-[450px] flex flex-col relative overflow-hidden border border-gray-800 group">
                  <div className="mb-auto">
-                    <div className="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center mb-6">
-                         <svg className="w-6 h-6 text-primary-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+                    <div className="w-14 h-14 bg-gray-800 rounded-2xl flex items-center justify-center mb-6">
+                         <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
                     </div>
-                    <h3 className="text-display-card font-bold text-primary-white mb-2">Join meetings in a click</h3>
-                    <p className="text-gray-400 text-body-base">Quickly access links to your meetings from menu bar</p>
+                    <h3 className="text-3xl font-bold text-white mb-2">Join meetings in a click</h3>
+                    <p className="text-gray-400 text-base">Quickly access links to your meetings from menu bar</p>
                  </div>
                  <div className="mt-8 flex justify-center">
                       <div className="w-64 bg-[#2C2C2E] rounded-xl p-4 shadow-2xl border border-gray-700 transform group-hover:scale-105 transition-transform">

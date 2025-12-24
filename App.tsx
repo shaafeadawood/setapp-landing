@@ -6,7 +6,6 @@ import VideoSection from './components/VideoSection';
 import Testimonials from './components/Testimonials';
 import PricingBanner from './components/PricingBanner';
 import Footer from './components/Footer';
-import './src/index.css';
 
 const App: React.FC = () => {
   return (

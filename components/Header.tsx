@@ -5,51 +5,52 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-primary-white/95 backdrop-blur-sm border-b border-border-subtle transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#1a1a1a] border-b border-white/10 transition-colors duration-300">
+      <div className="max-w-7xl mx-auto px-6 h-[60px] flex items-center justify-between gap-8">
         {/* Logo Section */}
         <div className="flex items-center gap-2 shrink-0 cursor-pointer hover:opacity-80 transition-opacity">
-          <LogoIcon className="w-8 h-8 text-brand-accent" />
-          <div className="flex flex-col">
-            <span className="text-primary-dark font-bold text-lg tracking-tight leading-none">SETAPP</span>
-            <span className="text-[10px] text-text-muted font-medium leading-none">
-              by <span className="font-serif">MacPaw</span>
-            </span>
+          <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+            <svg className="w-6 h-6" viewBox="0 0 24 24" fill="#1a1a1a">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5M2 12l10 5 10-5" opacity="0.7"/>
+            </svg>
           </div>
         </div>
 
-        {/* Search Bar - Hidden on Mobile */}
-        <div className="hidden md:flex flex-1 max-w-lg mx-6 relative">
-          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <SearchIcon className="text-text-muted" />
-          </div>
-          <input 
-            type="text" 
-            placeholder="Search for apps and guides" 
-            className="block w-full pl-10 pr-3 py-2 border-none rounded-lg bg-surface-accent text-primary-dark placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-brand-accent/50 text-label-nav transition-all"
-          />
-        </div>
+        {/* Search Bar removed - not in screenshot */}
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center space-x-6">
-          <a href="#" className="text-label-nav text-text-muted hover:text-primary-dark transition-colors">
-            Marketplace
+        <nav className="hidden lg:flex items-center space-x-8 flex-1 justify-center">
+          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
+            Shop at Setapp
           </a>
-          <a href="#" className="text-label-nav text-text-muted hover:text-primary-dark transition-colors">
-            Membership
+          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
+            All Setapp
           </a>
-          <a href="#" className="text-label-nav text-text-muted hover:text-primary-dark transition-colors">
-            Menu
+          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
+            Pricing
+          </a>
+          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
+            For Teams
+          </a>
+          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
+            Blog
+          </a>
+          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
+            Podcast
           </a>
         </nav>
 
         {/* Auth Buttons */}
-        <div className="hidden sm:flex items-center space-x-3 ml-4">
-          <a href="#" className="text-label-nav text-text-muted hover:text-primary-dark transition-colors">
-            Sign in
+        <div className="hidden sm:flex items-center space-x-4">
+          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
+            Log in
           </a>
-          <a href="#" className="text-label-nav font-bold text-primary-dark bg-transparent hover:bg-surface-accent border border-border-subtle rounded-lg px-4 py-2 transition-all active:scale-95">
-            Try free
+          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
+            Sign Up
+          </a>
+          <a href="#" className="text-sm font-semibold text-white bg-transparent hover:bg-white/10 border border-white/20 rounded-lg px-5 py-2 transition-all active:scale-95">
+            Try Free
           </a>
         </div>
 

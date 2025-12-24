@@ -3,11 +3,11 @@ import { PlayIcon } from './icons/Icons';
 
 const VideoSection: React.FC = () => {
   return (
-    <section className="bg-brand-dark pb-24 px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#1a1a1a] pb-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 border-t border-gray-800 pt-16">
-          <h2 className="text-display-section font-bold text-primary-white">Your Setapp journey.</h2>
-          <p className="text-gray-400 text-label-nav md:text-body-base max-w-sm mt-4 md:mt-0">
+          <h2 className="text-5xl font-bold text-white">Your Setapp journey.</h2>
+          <p className="text-gray-400 text-sm md:text-base max-w-sm mt-4 md:mt-0">
             Type in your task into Setapp search and get instant app recommendations.
           </p>
         </div>

@@ -10,7 +10,7 @@
   * {
     @apply box-border;
   }
-  
+
   /* Custom scrollbar to match the dark theme */
   ::-webkit-scrollbar {
     @apply w-2;
@@ -30,3 +30,4 @@
   .text-balance {
     text-wrap: balance;
   }
+}

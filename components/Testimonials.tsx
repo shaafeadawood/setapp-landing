@@ -30,12 +30,12 @@ const testimonials: Testimonial[] = [
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="bg-primary-white py-24 px-4 sm:px-6 lg:px-8">
+    <section className="bg-white py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
             <div>
-                 <h2 className="text-display-section font-bold text-primary-dark mb-4">Setapp in your words.</h2>
-                 <p className="text-text-muted text-body-base">What you say about how Setapp powers you up.</p>
+                 <h2 className="text-5xl font-bold text-black mb-4">Setapp in your words.</h2>
+                 <p className="text-gray-500 text-base">What you say about how Setapp powers you up.</p>
             </div>
              <div className="flex gap-4 mt-6 md:mt-0">
                  <div className="w-8 h-8 rounded-full bg-[#1877F2] flex items-center justify-center text-primary-white text-xs font-bold hover:opacity-80 transition-opacity cursor-pointer">f</div>

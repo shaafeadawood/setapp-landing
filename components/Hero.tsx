@@ -12,20 +12,20 @@ const FloatingWidget: React.FC<FloatingWidgetProps> = ({ className, rotation, ch
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative bg-brand-dark overflow-hidden min-h-[850px] flex flex-col items-center justify-center pt-16">
+    <div className="relative bg-[#1a1a1a] overflow-hidden min-h-screen flex flex-col items-center justify-center pt-[60px]">
       
       {/* Background Banner */}
-      <div className="absolute top-0 w-full bg-gradient-hero py-3 flex justify-center items-center z-20 border-b border-primary-white/5">
+      <div className="absolute top-[60px] w-full bg-gradient-to-r from-[#4a2c2e] via-[#3d2536] to-[#2e1f3d] py-3 flex justify-center items-center z-20 border-b border-white/5">
         <div className="flex items-center gap-3 text-sm px-4">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-pink-400 to-pink-600 flex items-center justify-center shadow-lg shadow-pink-500/30">
+            <div className="w-9 h-9 rounded-full bg-gradient-to-br from-pink-400 via-pink-500 to-pink-600 flex items-center justify-center shadow-lg shadow-pink-500/40">
                 <div className="flex gap-0.5">
-                    <div className="w-1.5 h-1.5 bg-primary-white rounded-full"></div>
-                    <div className="w-2 h-2 bg-primary-white rounded-full mt-1"></div>
+                    <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+                    <div className="w-2 h-2 bg-white rounded-full mt-1"></div>
                 </div>
             </div>
-            <span className="text-primary-white font-medium">Meet Eney, a local-first AI assistant for busywork</span>
-            <span className="bg-pink-500 text-primary-white text-[10px] font-bold px-1.5 py-0.5 rounded transform -rotate-2">BETA</span>
-            <button className="ml-2 border border-primary-white/20 hover:bg-primary-white/10 text-primary-white text-xs px-3 py-1 rounded transition-colors active:scale-95">Learn More</button>
+            <span className="text-white font-normal">Meet Eney, a local-first AI assistant for busywork</span>
+            <span className="bg-pink-500 text-white text-[10px] font-bold px-2 py-0.5 rounded transform -rotate-2">BETA</span>
+            <button className="ml-2 border border-white/20 hover:bg-white/10 text-white text-xs font-medium px-3 py-1.5 rounded transition-colors active:scale-95">Learn More</button>
         </div>
       </div>
 
@@ -133,23 +133,24 @@ const Hero: React.FC = () => {
       <div className="relative z-10 flex flex-col items-center text-center max-w-2xl px-4 animate-fade-in-up mt-10">
         
         {/* Setapp Center Logo */}
-        <div className="w-32 h-32 bg-[#2d2e30] rounded-[2.5rem] shadow-2xl flex items-center justify-center mb-8 border border-primary-white/10 relative group hover:scale-105 transition-transform duration-300">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary-white/5 to-transparent rounded-[2.5rem] pointer-events-none"></div>
-            <div className="grid grid-cols-2 gap-1 transform rotate-45 scale-75">
-                <div className="w-7 h-7 bg-card-peach rounded-sm"></div>
-                <div className="w-7 h-7 bg-card-peach rounded-sm"></div>
-                <div className="w-7 h-7 bg-card-peach rounded-sm"></div>
-                <div className="w-7 h-7 bg-card-peach rounded-sm"></div>
+        <div className="w-[120px] h-[120px] bg-gradient-to-br from-[#2a2a2a] to-[#1f1f1f] rounded-[28px] shadow-2xl flex items-center justify-center mb-10 border border-white/10 relative group hover:scale-105 transition-transform duration-300">
+            <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-[28px] pointer-events-none"></div>
+            <div className="grid grid-cols-2 gap-1.5 transform rotate-45">
+                <div className="w-[26px] h-[26px] bg-gradient-to-br from-[#FFB88C] to-[#FF9F6F] rounded-md"></div>
+                <div className="w-[26px] h-[26px] bg-gradient-to-br from-[#FFB88C] to-[#FF9F6F] rounded-md"></div>
+                <div className="w-[26px] h-[26px] bg-gradient-to-br from-[#FFB88C] to-[#FF9F6F] rounded-md"></div>
+                <div className="w-[26px] h-[26px] bg-gradient-to-br from-[#FFB88C] to-[#FF9F6F] rounded-md"></div>
             </div>
         </div>
 
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-primary-white tracking-tight mb-6 leading-[1.1]">
+        <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold text-white tracking-tight mb-4 leading-[1.05] text-center">
           Dozens of apps.<br />
-          <span className="text-primary-white">One subscription.</span>
+          <span className="text-white">One subscription.</span><br />
+          <span className="text-white">$9.99</span>
         </h1>
 
-        <div className="flex flex-col sm:flex-row items-center gap-4 mt-8 w-full sm:w-auto">
-          <button className="w-full sm:w-auto bg-primary-white hover:bg-surface-light text-primary-dark font-bold text-lg px-8 py-4 rounded-xl shadow-lg transition-transform transform hover:scale-105 active:scale-95">
+        <div className="flex flex-col sm:flex-row items-center gap-4 mt-10 w-full sm:w-auto">
+          <button className="w-full sm:w-auto bg-white hover:bg-gray-100 text-black font-semibold text-base px-8 py-3.5 rounded-xl shadow-lg transition-all transform hover:scale-105 active:scale-95">
             Try free for 7 days
           </button>
           
@@ -168,8 +169,8 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        <p className="text-gray-400 mt-8 text-body-large font-light max-w-lg">
-          Power up your workflow with Setapp, a smart way to get apps.
+        <p className="text-gray-400 mt-8 text-base font-normal max-w-md text-center">
+          Install apps with one click and boost your everyday workflows.
         </p>
       </div>
 
