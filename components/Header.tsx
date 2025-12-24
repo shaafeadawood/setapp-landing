@@ -21,36 +21,80 @@ const Header: React.FC = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-8 flex-1 justify-center">
-          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
-            Shop at Setapp
+          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors text-center">
+            How it works
           </a>
-          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
-            All Setapp
+          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors text-center">
+            All apps
           </a>
-          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
+          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors text-center">
             Pricing
           </a>
-          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
+          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors text-center">
             For Teams
           </a>
-          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
+          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors text-center">
             Blog
           </a>
-          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
+          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors text-center">
             Podcast
           </a>
         </nav>
 
         {/* Auth Buttons */}
-        <div className="hidden sm:flex items-center space-x-4">
+        <div className="hidden sm:flex items-center gap-6">
+          {/* Separator */}
+          <span className="text-white/30 text-lg">|</span>
+          
+          {/* US Flag Icon */}
+          <div className="w-8 h-6 rounded-sm overflow-hidden">
+            <svg viewBox="0 0 24 16" fill="none" className="w-full h-full">
+              <rect width="24" height="16" fill="#B22234"/>
+              <path d="M0 0h24v1.23H0V0zm0 2.46h24v1.23H0V2.46zm0 2.46h24v1.23H0V4.92zm0 2.46h24v1.23H0V7.38zm0 2.46h24v1.23H0V9.85zm0 2.46h24v1.23H0v-1.23zm0 2.46h24V16H0v-1.23z" fill="white"/>
+              <rect width="9.6" height="7" fill="#3C3B6E"/>
+              <g fill="white">
+                <circle cx="1.5" cy="1" r="0.5"/>
+                <circle cx="3" cy="1" r="0.5"/>
+                <circle cx="4.5" cy="1" r="0.5"/>
+                <circle cx="6" cy="1" r="0.5"/>
+                <circle cx="7.5" cy="1" r="0.5"/>
+                <circle cx="2.25" cy="2" r="0.5"/>
+                <circle cx="3.75" cy="2" r="0.5"/>
+                <circle cx="5.25" cy="2" r="0.5"/>
+                <circle cx="6.75" cy="2" r="0.5"/>
+                <circle cx="8.25" cy="2" r="0.5"/>
+                <circle cx="1.5" cy="3" r="0.5"/>
+                <circle cx="3" cy="3" r="0.5"/>
+                <circle cx="4.5" cy="3" r="0.5"/>
+                <circle cx="6" cy="3" r="0.5"/>
+                <circle cx="7.5" cy="3" r="0.5"/>
+                <circle cx="2.25" cy="4" r="0.5"/>
+                <circle cx="3.75" cy="4" r="0.5"/>
+                <circle cx="5.25" cy="4" r="0.5"/>
+                <circle cx="6.75" cy="4" r="0.5"/>
+                <circle cx="8.25" cy="4" r="0.5"/>
+                <circle cx="1.5" cy="5" r="0.5"/>
+                <circle cx="3" cy="5" r="0.5"/>
+                <circle cx="4.5" cy="5" r="0.5"/>
+                <circle cx="6" cy="5" r="0.5"/>
+                <circle cx="7.5" cy="5" r="0.5"/>
+                <circle cx="2.25" cy="6" r="0.5"/>
+                <circle cx="3.75" cy="6" r="0.5"/>
+                <circle cx="5.25" cy="6" r="0.5"/>
+                <circle cx="6.75" cy="6" r="0.5"/>
+                <circle cx="8.25" cy="6" r="0.5"/>
+              </g>
+            </svg>
+          </div>
+          
+          {/* Sign In Link */}
           <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
-            Log in
+            Sign In
           </a>
-          <a href="#" className="text-sm text-white/70 hover:text-white transition-colors">
-            Sign Up
-          </a>
-          <a href="#" className="text-sm font-semibold text-white bg-transparent hover:bg-white/10 border border-white/20 rounded-lg px-5 py-2 transition-all active:scale-95">
-            Try Free
+          
+          {/* Try Free Button */}
+          <a href="#" className="text-sm font-semibold text-white bg-transparent hover:bg-white/10 border border-white/30 rounded-lg px-5 py-2 transition-all active:scale-95">
+            Try free
           </a>
         </div>
 

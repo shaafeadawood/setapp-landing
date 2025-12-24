@@ -14,85 +14,87 @@ const FeatureSection: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Card 1 - Full Width on Mobile, First in grid */}
-            <div className="col-span-1 md:col-span-2 bg-gradient-to-r from-card-purple to-card-pink rounded-3xl p-1 overflow-hidden min-h-[400px] relative group">
-                <div className="absolute inset-0 bg-[url('https://picsum.photos/1200/600?blur=10')] opacity-20 mix-blend-overlay"></div>
-                <div className="relative z-10 h-full flex flex-col md:flex-row items-center">
-                    <div className="p-10 md:p-16 flex-1 text-center md:text-left">
-                        <div className="inline-block p-3 bg-primary-white/20 rounded-2xl mb-6 backdrop-blur-sm">
-                             <svg className="w-8 h-8 text-primary-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            {/* Card 1 - Keep your Mac clean - Pink gradient with screenshot */}
+            <div className="col-span-1 md:col-span-2 bg-gradient-to-br from-pink-300 to-pink-400 rounded-3xl overflow-hidden min-h-[500px] md:min-h-[600px] relative group">
+                <div className="relative z-10 h-full flex flex-col p-8 md:p-12 lg:p-16 pt-12 md:pt-16 lg:pt-20">
+                    {/* Top section - Icon and Text side by side with more spacing */}
+                    <div className="flex items-start gap-6 mb-12 md:mb-16 lg:mb-20">
+                        {/* Icon on the left */}
+                        <div className="flex-shrink-0">
+                             <img 
+                               src="/images/img2.png" 
+                               alt="CleanMyMac app icon" 
+                               className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-[20px] shadow-lg"
+                             />
                         </div>
-                        <h3 className="text-3xl font-bold text-black mb-4">Keep your Mac clean</h3>
-                        <p className="text-black/70 text-lg">Remove junk, scan for malware, wipe email attachments</p>
+                        {/* Text on the right */}
+                        <div className="flex-1">
+                            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 leading-tight">Keep your Mac clean</h3>
+                            <p className="text-gray-800 text-base md:text-lg lg:text-xl leading-relaxed">Remove junk, scan for malware, wipe email attachments</p>
+                        </div>
                     </div>
-                    <div className="flex-1 h-full w-full min-h-[300px] flex items-center justify-center p-8">
-                         {/* Abstract UI Representation */}
-                         <div className="w-full max-w-md aspect-video bg-primary-white/10 backdrop-blur-lg rounded-xl border border-primary-white/20 shadow-2xl p-6 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
-                              <div className="absolute top-0 left-0 right-0 h-8 bg-primary-white/10 flex items-center px-4 space-x-2">
-                                  <div className="w-3 h-3 rounded-full bg-red-400"></div>
-                                  <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-                                  <div className="w-3 h-3 rounded-full bg-green-400"></div>
-                              </div>
-                              <div className="mt-8 flex items-center justify-center h-40">
-                                   <div className="w-32 h-32 rounded-full border-[12px] border-pink-400/50 flex items-center justify-center relative">
-                                       <span className="text-4xl text-primary-white font-bold">5.2</span>
-                                       <span className="absolute -bottom-8 text-sm text-primary-white/70">GB Cleaned</span>
-                                   </div>
-                              </div>
+                    
+                    {/* Bottom section - Large screenshot */}
+                    <div className="flex-1 flex items-end justify-center pb-4 md:pb-6">
+                         <div className="w-full max-w-4xl relative">
+                              <img 
+                                src="/images/img1.png" 
+                                alt="CleanMyMac interface showing System Junk cleaner" 
+                                className="w-full h-auto rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
+                              />
                          </div>
                     </div>
                 </div>
             </div>
 
-            {/* Card 2 */}
-            <div className="bg-[#FFF8F0] rounded-3xl p-8 min-h-[450px] flex flex-col relative overflow-hidden group">
-                 <div className="mb-auto">
-                    <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
-                         <svg className="w-7 h-7 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
-                    </div>
-                    <h3 className="text-3xl font-bold text-black mb-2">Write code</h3>
-                    <p className="text-gray-600 text-base">Create applications in more than 25 languages</p>
-                 </div>
-                 <div className="mt-8 relative h-64 w-full bg-[#1e1e1e] rounded-xl shadow-2xl transform group-hover:translate-y-2 transition-transform duration-500 p-4 font-mono text-xs overflow-hidden">
-                      <div className="text-gray-500 mb-2">// building the future</div>
-                      <div className="text-purple-400">import</div> <span className="text-blue-300">React</span> <span className="text-purple-400">from</span> <span className="text-green-300">'react'</span>;
-                      <br/>
-                      <div className="mt-2">
-                          <span className="text-blue-400">function</span> <span className="text-yellow-300">App</span>() {'{'}
-                          <br/>&nbsp;&nbsp;<span className="text-purple-400">return</span> (
-                          <br/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-300">&lt;</span><span className="text-red-400">div</span><span className="text-gray-300">&gt;</span>
-                          <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello World
-                          <br/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-300">&lt;/</span><span className="text-red-400">div</span><span className="text-gray-300">&gt;</span>
-                          <br/>&nbsp;&nbsp;);
-                          <br/>{'}'}
+            {/* Card 2 - Write code - Cream/beige card with code editor */}
+            <div className="bg-[#FFF8F0] rounded-3xl p-8 md:p-10 min-h-[450px] md:min-h-[500px] flex flex-col relative overflow-hidden group">
+                 {/* Code editor screenshot at top */}
+                 <div className="mb-6 relative flex-1">
+                      <div className="w-full relative rounded-xl overflow-hidden shadow-2xl transform group-hover:-translate-y-2 transition-transform duration-500">
+                           <img 
+                             src="/images/img4.png" 
+                             alt="Code editor showing programming interface" 
+                             className="w-full h-auto"
+                           />
                       </div>
+                 </div>
+                 
+                 {/* Icon, title and description at bottom */}
+                 <div className="mt-auto">
+                    <div className="mb-4">
+                         <img 
+                           src="/images/img3.png" 
+                           alt="Code editor icon" 
+                           className="w-20 h-20 md:w-24 md:h-24 rounded-2xl object-contain"
+                         />
+                    </div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Write code</h3>
+                    <p className="text-gray-700 text-base md:text-lg">Create applications in more than 25 languages</p>
                  </div>
             </div>
 
-            {/* Card 3 */}
-            <div className="bg-[#1C1C1E] rounded-3xl p-8 min-h-[450px] flex flex-col relative overflow-hidden border border-gray-800 group">
-                 <div className="mb-auto">
-                    <div className="w-14 h-14 bg-gray-800 rounded-2xl flex items-center justify-center mb-6">
-                         <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+            {/* Card 3 - Join meetings - Dark blue card with meeting interface */}
+            <div className="bg-gradient-to-br from-[#3B4F6B] to-[#2C3E50] rounded-3xl p-8 md:p-10 min-h-[450px] md:min-h-[500px] flex flex-col relative overflow-hidden group">
+                 <div className="mb-6">
+                    {/* Icon image from public folder */}
+                    <div className="mb-6">
+                         <img 
+                           src="/images/img6.png" 
+                           alt="Meeting icon" 
+                           className="w-16 h-16 md:w-20 md:h-20 rounded-2xl object-contain"
+                         />
                     </div>
-                    <h3 className="text-3xl font-bold text-white mb-2">Join meetings in a click</h3>
-                    <p className="text-gray-400 text-base">Quickly access links to your meetings from menu bar</p>
+                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-3">Join meetings in a click</h3>
+                    <p className="text-gray-300 text-lg">Quickly access links to your meetings from menu bar</p>
                  </div>
-                 <div className="mt-8 flex justify-center">
-                      <div className="w-64 bg-[#2C2C2E] rounded-xl p-4 shadow-2xl border border-gray-700 transform group-hover:scale-105 transition-transform">
-                          <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Next Meeting</div>
-                          <div className="flex items-center gap-3 mb-4">
-                              <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
-                                  <span className="text-primary-white text-xs font-bold">Zoom</span>
-                              </div>
-                              <div>
-                                  <div className="text-primary-white text-sm font-medium">Design Review</div>
-                                  <div className="text-gray-500 text-xs">10:00 - 11:00 AM</div>
-                              </div>
-                          </div>
-                          <button className="w-full bg-blue-600 hover:bg-blue-500 text-primary-white text-sm font-medium py-2 rounded-lg transition-colors active:scale-95">
-                              Join Meeting
-                          </button>
+                 <div className="mt-auto flex-1 flex items-end justify-center pb-4">
+                      <div className="w-full max-w-sm relative rounded-xl overflow-hidden shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
+                           <img 
+                             src="/images/img7.png" 
+                             alt="Meeting scheduler interface with upcoming meetings" 
+                             className="w-full h-auto"
+                           />
                       </div>
                  </div>
             </div>
